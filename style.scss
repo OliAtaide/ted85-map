@@ -1,0 +1,198 @@
+@use "base";
+
+:root {
+  --norte: 23, 133, 69;
+  --nordeste: 255, 138, 80;
+  --centro_oeste: 148, 105, 0;
+  --sudeste: 121, 152, 235;
+  --sul: 11, 72, 107;
+}
+
+svg {
+  text {
+    font-size: 20px;
+    font-weight: 600;
+    fill: white;
+  }
+  
+  path {
+    fill: #f9f9f9;
+    cursor: pointer;
+  }
+
+  #norte {
+    stroke: rgb(var(--norte));
+
+    &:hover path {
+      fill: rgba(var(--norte), 0.25) !important;
+    }
+  }
+
+  #nordeste {
+    stroke: rgb(var(--nordeste));
+
+    &:hover path {
+      fill: rgba(var(--nordeste), 0.25) !important;
+    }
+  }
+
+  #centro_oeste {
+    stroke: rgb(var(--centro_oeste));
+
+    &:hover path {
+      fill: rgba(var(--centro_oeste), 0.25) !important;
+    }
+  }
+
+  #sudeste {
+    stroke: rgb(var(--sudeste));
+
+    &:hover path {
+      fill: rgba(var(--sudeste), 0.25) !important;
+    }
+  }
+
+  #sul {
+    stroke: rgb(var(--sul));
+
+    &:hover path {
+      fill: rgba(var(--sul), 0.25) !important;
+    }
+  }
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  gap: 1em;
+  margin-bottom: 2em;
+
+  .nav-link {
+    flex: 1 1 auto;
+    width: calc((100% - 2em) / 3);
+    border: 1px solid var(--primary-main);
+    border-radius: 4px;
+    color: var(--primary-main);
+
+    &.active {
+      background-color: var(--branding-main);
+      border-color: var(--branding-main);
+      color: white;
+    }
+
+    &:hover {
+      background-color: var(--primary-main);
+      border-color: var(--primary-main);
+      color: white;
+    }
+  }
+}
+
+.map-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .tab-card {
+    width: 450px;
+    border-color: var(--primary-main) !important;
+    box-shadow: 0 6px 12px 1px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.data-card {
+  border: none;
+  box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.08);
+}
+
+.data-title,
+.data-text {
+  color: var(--primary-main);
+}
+
+.data-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.data-text {
+  font-size: 20px;
+}
+
+.region-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.region-title {
+  padding: 0 8px;
+  border-radius: 4px;
+  color: white;
+}
+
+.mediaBR .region-title {
+  text-transform: uppercase;
+  color: var(--primary-main) !important;
+
+  .data-title,
+  .data-text {
+    color: var(--primary-main) !important;
+  }
+}
+
+.norte {
+  .region-title {
+    background-color: rgb(var(--norte));
+  }
+
+  .data-title,
+  .data-text {
+    color: rgb(var(--norte));
+  }
+}
+
+.nordeste {
+  .region-title {
+    background-color: rgb(var(--nordeste));
+  }
+
+  .data-title,
+  .data-text {
+    color: rgb(var(--nordeste));
+  }
+}
+
+.centroOeste {
+  .region-title {
+    background-color: rgb(var(--centro_oeste));
+  }
+
+  .data-title,
+  .data-text {
+    color: rgb(var(--centro_oeste));
+  }
+}
+
+.sudeste {
+  .region-title {
+    background-color: rgb(var(--sudeste));
+  }
+
+  .data-title,
+  .data-text {
+    color: rgb(var(--sudeste));
+  }
+}
+
+.sul {
+  .region-title {
+    background-color: rgb(var(--sul));
+  }
+
+  .data-title,
+  .data-text {
+    color: rgb(var(--sul));
+  }
+}

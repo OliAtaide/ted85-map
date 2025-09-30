@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --primary-main: #113154;
+  --branding-main: #b02b2a;
+  --feedback-bg: #e8eef8;
+  --feedback-main: #446ab8;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--branding-main);
+  color: white;
+}
+
+.main-card {
+  border: 1px solid var(--primary-main);
+  border-radius: 8px;
+  min-height: 600px;
+}
+
+.alert {
+  border-radius: 4px;
+  text-align: center;
+  background-color: var(--feedback-bg);
+  color: var(--feedback-main);
+  padding: 8px;
+}
+
+.card-title {
+  color: var(--primary-main);
+  font-size: 24px;
+}
+
+footer {
+  border-top: 1px solid black;
+  padding: 20px 0;
+  margin-top: auto;
+}
+
+.subheader {
+  background-color: white;
+  color: black;
+  font-size: 26px;
+  text-align: center;
+  padding: 16px 0;
+}
+
+.btn {
+  font-size: 20px;
+  padding: 8px 16px;
+  line-height: 1;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: var(--primary-main);
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.border-primary {
+  border-color: var(--primary-main) !important;
+}
+
+.text-primary {
+  color: var(--primary-main) !important;
+}
+
+main {
+  margin: auto 0;
+}
+
+.container h1 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 32px;
+  color: var(--primary-main);
+}
+
+:root {
+  --norte: 23, 133, 69;
+  --nordeste: 255, 138, 80;
+  --centro_oeste: 148, 105, 0;
+  --sudeste: 121, 152, 235;
+  --sul: 11, 72, 107;
+}
+
+svg text {
+  font-size: 20px;
+  font-weight: 600;
+  fill: white;
+}
+svg path {
+  fill: #f9f9f9;
+  cursor: pointer;
+}
+svg #norte {
+  stroke: rgb(var(--norte));
+}
+svg #norte:hover path {
+  fill: rgba(var(--norte), 0.25) !important;
+}
+svg #nordeste {
+  stroke: rgb(var(--nordeste));
+}
+svg #nordeste:hover path {
+  fill: rgba(var(--nordeste), 0.25) !important;
+}
+svg #centro_oeste {
+  stroke: rgb(var(--centro_oeste));
+}
+svg #centro_oeste:hover path {
+  fill: rgba(var(--centro_oeste), 0.25) !important;
+}
+svg #sudeste {
+  stroke: rgb(var(--sudeste));
+}
+svg #sudeste:hover path {
+  fill: rgba(var(--sudeste), 0.25) !important;
+}
+svg #sul {
+  stroke: rgb(var(--sul));
+}
+svg #sul:hover path {
+  fill: rgba(var(--sul), 0.25) !important;
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+.tabs .nav-link {
+  flex: 1 1 auto;
+  width: calc((100% - 2em) / 3);
+  border: 1px solid var(--primary-main);
+  border-radius: 4px;
+  color: var(--primary-main);
+}
+.tabs .nav-link.active {
+  background-color: var(--branding-main);
+  border-color: var(--branding-main);
+  color: white;
+}
+.tabs .nav-link:hover {
+  background-color: var(--primary-main);
+  border-color: var(--primary-main);
+  color: white;
+}
+
+.map-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.map-wrapper .tab-card {
+  width: 450px;
+  border-color: var(--primary-main) !important;
+  box-shadow: 0 6px 12px 1px rgba(0, 0, 0, 0.12);
+}
+
+.data-card {
+  border: none;
+  box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.08);
+}
+
+.data-title,
+.data-text {
+  color: var(--primary-main);
+}
+
+.data-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.data-text {
+  font-size: 20px;
+}
+
+.region-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.region-title {
+  padding: 0 8px;
+  border-radius: 4px;
+  color: white;
+}
+
+.mediaBR .region-title {
+  text-transform: uppercase;
+  color: var(--primary-main) !important;
+}
+.mediaBR .region-title .data-title,
+.mediaBR .region-title .data-text {
+  color: var(--primary-main) !important;
+}
+
+.norte .region-title {
+  background-color: rgb(var(--norte));
+}
+.norte .data-title,
+.norte .data-text {
+  color: rgb(var(--norte));
+}
+
+.nordeste .region-title {
+  background-color: rgb(var(--nordeste));
+}
+.nordeste .data-title,
+.nordeste .data-text {
+  color: rgb(var(--nordeste));
+}
+
+.centroOeste .region-title {
+  background-color: rgb(var(--centro_oeste));
+}
+.centroOeste .data-title,
+.centroOeste .data-text {
+  color: rgb(var(--centro_oeste));
+}
+
+.sudeste .region-title {
+  background-color: rgb(var(--sudeste));
+}
+.sudeste .data-title,
+.sudeste .data-text {
+  color: rgb(var(--sudeste));
+}
+
+.sul .region-title {
+  background-color: rgb(var(--sul));
+}
+.sul .data-title,
+.sul .data-text {
+  color: rgb(var(--sul));
+}/*# sourceMappingURL=style.css.map */

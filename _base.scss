@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --primary-main: #113154;
+  --branding-main: #b02b2a;
+  --feedback-bg: #e8eef8;
+  --feedback-main: #446ab8;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--branding-main);
+  color: white;
+}
+
+.main-card {
+  border: 1px solid var(--primary-main);
+  border-radius: 8px;
+  min-height: 600px;
+}
+
+.alert {
+  border-radius: 4px;
+  text-align: center;
+  background-color: var(--feedback-bg);
+  color: var(--feedback-main);
+  padding: 8px;
+}
+
+.card-title {
+  color: var(--primary-main);
+  font-size: 24px;
+}
+
+footer {
+  border-top: 1px solid black;
+  padding: 20px 0;
+  margin-top: auto;
+}
+
+.subheader {
+  background-color: white;
+  color: black;
+  font-size: 26px;
+  text-align: center;
+  padding: 16px 0;
+}
+
+.btn {
+  font-size: 20px;
+  padding: 8px 16px;
+  line-height: 1;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: var(--primary-main);
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.border-primary {
+  border-color: var(--primary-main) !important;
+}
+
+.text-primary {
+  color: var(--primary-main) !important;
+}
+
+main {
+  margin: auto 0;
+}
+
+.container {
+  h1 {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--primary-main);
+  }
+}
