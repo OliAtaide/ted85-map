@@ -21,8 +21,8 @@ const dados = [
       Indígena: "98.1%",
     },
     Sul: {
-      Geral: "98.5%",
-      Indígena: "98.1%",
+      Geral: "98.9%",
+      Indígena: "98.4%",
     },
   },
   {
@@ -39,7 +39,7 @@ const dados = [
       Indígena: "58.8%",
     },
     "Centro-Oeste": {
-      Geral: "73.8%",
+      Geral: "73.4%",
       Indígena: "43.5%",
     },
     Sudeste: {
